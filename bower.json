@@ -1,11 +1,11 @@
 {
+  "directory": "./scripts/bower_components/",
   "name": "mattchandleraz.github.io",
   "version": "0.0.0",
   "homepage": "https://github.com/mchandleraz/mchandleraz.github.io",
   "authors": [
     "Matt Chandler <matt.chandler@webpt.com>"
   ],
-  "directory":"scripts/bower_components"
   "main": "main.js",
   "license": "MIT",
   "ignore": [
@@ -14,5 +14,6 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {}
 }

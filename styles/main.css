@@ -6820,6 +6820,17 @@ td.visible-print {
     padding: .2em 0
 }
 
+@import url(http://fonts.googleapis.com/css?family=Jaldi|Ruda:400,700);
+
+body {
+	font-family: 'Ruda', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Jaldi', sans-serif;
+}
+
 a {
     color: #4b4945;
     text-decoration: underline

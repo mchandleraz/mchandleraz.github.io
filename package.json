@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/mchandleraz/mchandleraz.github.io",
   "dependencies": {
-    "gulp": "^3.8.11",
-    "wiredep": "^2.2.2"
+    "gulp": "^3.8.11"
   }
 }

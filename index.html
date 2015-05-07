@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" ng-app="mchandleraz">
 <!--<![endif]-->
 
 <head>
@@ -72,6 +72,7 @@
     <script src="scripts/vendor.js"></script>
     <!-- bower:js -->
     <!-- endbower -->
+    <script src="bower_components/angular/angular.js"></script>
     <script src="scripts/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -89,36 +90,6 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X');
     ga('send', 'pageview');
-    </script>
-    <script>
-    function blink() {
-        var blinks = document.getElementsByTagName('blink'),
-            colors = ['red', 'green', 'blue', 'yellow', 'white', 'orange', 'purple'];
-
-        for (var i = blinks.length - 1; i >= 0; i--) {
-            if (blinks[i].innerText.length > colors.length) {
-                var concatCount = Math.round(blinks[i].innerText.length / colors.length);
-                while (concatCount > 0 && (colors.length <= blinks[i].innerText.length)) {
-                    colors = colors.concat(colors);
-                    concatCount--;
-                }
-                // TODO: Set colors and stuff
-            }
-
-        }
-
-        window.setTimeout(blink, 1000);
-    }
-
-    if (document.addEventListener) {
-        document.addEventListener("DOMContentLoaded", blink, false);
-    } else if (window.addEventListener) {
-        window.addEventListener("load", blink, false);
-    } else if (window.attachEvent) {
-        window.attachEvent("onload", blink);
-    } else {
-        window.onload = blink;
-    }
     </script>
 </body>
 

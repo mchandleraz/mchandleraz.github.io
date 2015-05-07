@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="mchandleraz"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,12 +58,25 @@
         <div class="container">
 
             <div class="row marketing">
-                <div class="col-sm-8">
+                <div class="col-sm-12">
                     <h1 class="h3">About</h1>
-                    <p>As a Front-End Developer, I specialize in developing mobile-first responsive web designs with semantic markup and styling using HTML5/CSS3, and progressive enhancement with JavaScript (via jQuery where appropriate). I've worked extensively with WordPress as a blogging platform as well as a CMS.</p>
-                    <p>I've worked on projects from e-mail newsletters to database-driven CMS-powered websites for businesses. I'm the founder and creator of <a href="http://gumpshun.io/">Gumpshun</a>, an HTML5 webapp for vintage motorcycle enthusiasts.</p>
-                    <p>I use modern web development tools like Yeoman, Bootstrap, Ember, and <span class="strikethrough">Grunt</span> Gulp.js to build quickly and efficiently. This means your project ships on time, works and looks great across devices, and <a href="/about.html#process">you save money</a>.</p>
-
+                    <p>I'm a Web Application UI Developer in Phoenix, Arizona with an interest in full-stack web app development. With a strong foundation of OOP and MVC, I'm ready to learn more 3-letter words.</p>
+                    <div class="row">
+                        <div class="col-sm-5">
+                             <ul class="">
+                                <li>Full-stack JavaScript, including MEAN stack, Gulp/Grunt, Yeoman, jQuery, etc. Currently exploring functional programming in JavaScript.</li>
+                                <li>REST API authoring, design &amp; consumption</li>
+                                <li>Familiarity with most modern CSS tools, frameworks, techniques, and methodologies with a preference for mobile-first, SCSS implementations following BEM methodology.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5">
+                            <ul class="">
+                                <li>Best practice (though not neccesarily standards-compliant) HTML5, with experience using the Web Storage, History, Shadow DOM, Geolocation and Web Components APIs.</li>
+                                <li>Lead Client-side efforts on a Polymer.js Web Component project, utilizing modern UI and UX engineering in a legacy application. (Ext.js, Polymer.js, XHR, Zend Framework 2, LAMP).</li>
+                                <li>LAMP stack: Zend 2, Composer, phing, Jenkins</li>
+                            </ul>
+                        </div>
+                    </div>
                     The code for this site is at <a href="https://github.com/mchandleraz/mattchandleraz.com/tree/master/app">github.com</a>
 
                     <div id="availability">
@@ -73,68 +86,22 @@
                     </div>
 
                 </div>
-                <div class="col-sm-4">
-                    <h1 class="h3">At A Glance</h1>
-
-                    <ul>
-                        <li>Full-stack JavaScript, including MEAN stack, Gulp/Grunt, Yeoman, jQuery, etc. Currently exploring functional programming in JavaScript.</li>
-                        <li>Standards-compliant HTML5, with experience using the Web Storage, History, Shadow DOM, Geolocation and Web Components APIs.</li>
-                        <li>Familiarity with most modern CSS tools, frameworks, techniques, and methodologies with a preference for mobile-first, SCSS implementations following BEM methodology.</li>
-                        <li>REST API authoring &amp; consumption</li>
-                        <li>Lead CLient-Side efforts on a Polymer.js Web Component project, utilizing modern UI and UX engineering in a legacy application. (Ext.js, Polymer.js, XHR, Zend Framework 2, LAMP stack)</li>
-                        <li>Jenkins? Heroku? Elasticsearch? Yes please.</li>
-                    </ul>
-                </div>
             </div>
 
-            <div class="row" id="portfolio">
+            <div class="row" id="portfolio" ng-controller="PortfolioCtrl">
                 <div class="col-sm-12">
                     <h3 class="h1">Portfolio</h3>
-                    <article class="row marketing">
-                        <div class="col-sm-8">
-                            <a href="/portfolio_tsr-release.html"><h1 class="h3">Talking Stick Resort | Release Pool Party Series</h1></a>
-                            <p>The RIESTER C#/.NET team and I partnered up to develop a microsite to promote one of the “Best Valley Pool Parties.” Using a combination of proprietary and third-party APIs, JavaScript, and HTML5 client-side storage I was able to deliver a highly performant, mobile-first responsive experience.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="/portfolio_tsr-release.html"><img src="images/portfolio/release.jpg" alt="[...]"></a>
-                        </div>
-                    </article>
-                    <article class="row marketing">
-                        <div class="col-sm-8">
-                            <a href="/portfolio_voskos.html"><h1 class="h3">Voskos</h1></a>
-                            <p><span class="uppercase">Voskos</span><sup>&reg;</sup> came to <a href="http://www.riester.com/">RIESTER</a> looking for a more comprehensive CMS solution and a complete front-end makeover. As lead developer for this project, I used WordPress backed by custom post types to implement an easier-to-manager CMS.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="/portfolio_voskos.html"><img src="images/portfolio/voskos.jpg" alt="[...]"></a>
-                        </div>
-                    </article>
-                    <article class="row marketing">
-                        <div class="col-sm-8">
-                            <a href="/portfolio_rattlers.html"><h1 class="h3">AZRattlers.com Redesign</h1></a>
-                            <p>The Arizona Rattlers needed a new web presence for the 2013 season, and had specific functionality goals in mind. We worked together to achieve the functionality, refresh the look, and incorporate the Rattlers 2013 season branding strategy into their online efforts.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="/portfolio_rattlers.html"><img src="images/portfolio/rattlers.jpg" alt="[...]"></a>
-                        </div>
-                    </article>
-                    <article class="row marketing">
-                        <div class="col-sm-8">
-                            <a href="/portfolio_prss.html"><h1 class="h3">Gilbert Daily PRSS</h1></a>
-                            <p>I helped DiscoverMINE customize a WordPress theme they were using for their Gilbert Daily PRSS blog. I modified the theme to suit their needs, as well as improved user experience on mobile devices and tablets.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="/portfolio_prss.html"><img src="images/portfolio/gilbert-news-blog.jpg" alt="[...]"></a>
-                        </div>
-                    </article>
-                    <article class="row marketing">
-                        <div class="col-sm-8">
-                            <a href="/portfolio_ksport.html"><h1 class="h3">Ksport USA</h1></a>
-                            <p>Ksport was looking for an updated look and lots of new functionality from their website. Through knowledge of their target demographic, I was able to deliver a feature-rich website that was more aligned with their brand and gave Ksport staff the tools needed to succesfully maintain their website.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="/portfolio_ksport.html"><img src="images/portfolio/ksport.jpg" alt="[...]"></a>
-                        </div>
-                    </article>
+                    <div ng-repeat="project in projects">
+                        <article class="row marketing">
+                            <div class="col-sm-8">
+                                <a href="{{project.detailUrl}}"><h1 class="h3">{{project.title}}</h1></a>
+                                <p>{{project.body}}</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="{{project.detailUrl}}"><img src="{{project.images.thumbnail}}" alt="[...]"></a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
 
@@ -145,7 +112,7 @@
         </div>
 
         <script src="scripts/vendor.js"></script>
-
+        <script src="bower_components/angular/angular.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

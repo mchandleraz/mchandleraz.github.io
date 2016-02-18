@@ -12,6 +12,8 @@ proto.createdCallback = function () {
             return;
         }
     }
+    
+    request.send();
 }
 
 Element = document.registerElement('x-test', {

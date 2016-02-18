@@ -10,7 +10,7 @@ proto.createdCallback = function () {
         if (request.readyState != 4 || request.status != 200) {
             return;
         }
-        console.log(request);
+        console.log(JSON.parse(request.response), request);
     }
     
     request.send();

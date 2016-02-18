@@ -1,4 +1,6 @@
 var proto = Object.create(HTMLElement.prototype);
+var Element;
+var element;
 
 proto.createdCallback = function () {
     window.alert('alert');

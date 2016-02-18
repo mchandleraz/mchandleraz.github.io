@@ -7,10 +7,10 @@ proto.createdCallback = function () {
     
     request.open('GET', '/api/v2/customers/QA2MDMUBITESTAZSS9613/policies/summary', true);
     request.onreadystatechange = function () {
-        console.log(arguments);
         if (request.readyState != 4 || request.status != 200) {
             return;
         }
+        console.log(request);
     }
     
     request.send();

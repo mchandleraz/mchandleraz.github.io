@@ -1,11 +1,13 @@
-var XFoo = document.registerElement('x-foo', {
-    prototype: Object.create(HTMLElement.prototype, {
-      createdCallback: function () {
-        console.log('boom goes the dynamite.');
-      }
-    })
+var proto = Object.create(HTMLElement.prototype);
+
+proto.createdCallback = function () {
+    window.alert('alert');
+    console.log('log');
+}
+
+Element = document.registerElement('x-test', {
+    prototype: proto
 });
 
-(function(){
-    document.body.appendChild(XFoo);
-}());
+element = new Element();
+document.body.appendChild(element);

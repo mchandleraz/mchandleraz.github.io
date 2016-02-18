@@ -21,4 +21,6 @@ Element = document.registerElement('x-test', {
 });
 
 element = new Element();
+element.innerHTML = '<h1>Web Component Test</h1>';
+
 document.body.appendChild(element);

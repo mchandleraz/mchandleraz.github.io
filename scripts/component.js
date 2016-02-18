@@ -3,8 +3,15 @@ var Element;
 var element;
 
 proto.createdCallback = function () {
-    window.alert('alert');
-    console.log('log');
+    var request = new XMLHttpRequest();
+    
+    request.open('GET', '/api/v2/customers/QA2MDMUBITESTAZSS9613/policies/summary', true);
+    request.onreadystatechange = function () {
+        if (request.readyState != 4 || request.status != 200) {
+            return;
+        }
+        console.log(arguments);
+    }
 }
 
 Element = document.registerElement('x-test', {

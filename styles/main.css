@@ -6956,10 +6956,6 @@ a:hover {
     text-decoration: none
 }
 
-#sidebar {
-    margin-top: 2em
-}
-
 .home .jumbotron,
 .home .navbar-toggle:hover,
 .home .navbar-toggle:focus,
@@ -7002,37 +6998,6 @@ a:hover {
     clear: both
 }
 
-.portfolio-detail .jumbotron {
-    padding: 0;
-    height: 14px
-}
-
-.portfolio-detail .jumbotron,
-.portfolio-detail .navbar-toggle:hover,
-.portfolio-detail .navbar-toggle:focus,
-.portfolio-detail .navbar-nav>.active>a,
-.portfolio-detail .navbar-nav>.active>a:hover,
-.portfolio-detail .navbar-nav>.active>a:focus {
-    color: #262626;
-    background-color: #66635d
-}
-
-#mockups {
-    text-align: center
-}
-
-.mockup {
-    max-width: 100%
-}
-
-.mockup-tablet {
-    margin: 1em 0 1em 2em
-}
-
-.mockup-desktop {
-    margin: 0 0 1em
-}
-
 .well+.btn {
     margin-bottom: 20px
 }
@@ -7069,10 +7034,6 @@ a:hover {
     margin-left: 0
 }
 
-.thumbnail {
-    display: inline-block
-}
-
 .tags ul {
     padding: 0
 }
@@ -7095,30 +7056,15 @@ a:hover {
     .jumbotron {
         border-bottom: 0
     }
-    #sidebar {
-        margin: initial
-    }
     .navbar-mcaz .navbar-header {
         margin-left: 15px
     }
     .navbar-mcaz .navbar-nav {
         float: right
     }
-    .mockup {
-        float: left;
-        margin: 0 1em 1em 0
-    }
 }
 
 @media screen and (min-width: 992px) {
-    #portfolio .media {
-        height: 465px;
-        position: relative
-    }
-    #portfolio .media img {
-        bottom: 0;
-        position: absolute
-    }
     #sidebar h4 br {
         display: none
     }

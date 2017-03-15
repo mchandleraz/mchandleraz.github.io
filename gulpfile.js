@@ -1,5 +1,5 @@
-var gulp = require('gulp'),
-	wiredep = require('wiredep').stream;
+var gulp = require('gulp');
+var wiredep = require('wiredep').stream;
 
 gulp.task('bower', function () {
   gulp.src('./src/footer.html')

@@ -7,8 +7,6 @@ var app = angular.module('mchandleraz', []);
 
 app.controller('PortfolioCtrl', function($scope) {
 
-	var imgBasePath = 'images/portfolio/';
-
 	$scope.projects = [
 		{
 			title:'Ksport',

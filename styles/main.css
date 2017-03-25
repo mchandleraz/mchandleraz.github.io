@@ -6998,7 +6998,7 @@ a:hover {
     clear: both
 }
 
-.well+.btn {
+.well + .btn {
     margin-bottom: 20px
 }
 
@@ -7041,6 +7041,10 @@ a:hover {
 .tags .label {
     margin: .33em;
     display: inline-block
+}
+
+li {
+    margin-bottom: 0.66em;
 }
 
 @media screen and (min-width: 768px) {
